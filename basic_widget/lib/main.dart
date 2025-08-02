@@ -1,5 +1,6 @@
 
-import 'package:basic_widget/all_widgets/aspect_ratio.dart';
+
+import 'package:basic_widget/all_widgets/block_semantics.dart';
 
 
 import 'package:flutter/material.dart';
@@ -16,9 +17,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      showSemanticsDebugger: true,
+      title: "Flutter App",
       color: Colors.grey,
       debugShowCheckedModeBanner: false,
-          home: Aspect_Ration(),
+          home: Block_Semantics(),
     );
   }
 }
